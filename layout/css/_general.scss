@@ -204,6 +204,7 @@ a {
   }
   &-social {
     display: flex;
+    cursor: pointer;
     li:not(:last-child) {
       margin-right: 17px;
     }
