@@ -1,7 +1,7 @@
 import type { Response } from '@/types/News'
 
 export const fetchData = async (): Promise<Response> => {
-  const result = await fetch('http://flems.github.io/test/api/news/')
+  const result = await fetch('https://flems.github.io/test/api/news/')
     .then((resp) => {
       if (!resp.ok) {
         throw new Error(`${resp.status}`)
@@ -14,7 +14,7 @@ export const fetchData = async (): Promise<Response> => {
 }
 
 export const fetchPage = async (page: number): Promise<Response> => {
-  const result = await fetch(`http://flems.github.io/test/api/news/${page}`)
+  const result = await fetch(`https://flems.github.io/test/api/news/${page}`)
     .then((resp) => {
       if (!resp.ok) {
         throw new Error(`${resp.status}`)

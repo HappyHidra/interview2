@@ -51,8 +51,9 @@
 <script setup lang="ts">
 import { fetchData, fetchPage } from '@/composables/useData'
 import type { Response } from '@/types/News'
+import type { Ref } from 'vue'
 import { formatDate } from '@/helpers/date'
-import { ref, Ref, computed } from 'vue'
+import { ref, computed } from 'vue'
 
 const data: Ref<Response | null> = ref(null)
 const currentPage = ref(0)
