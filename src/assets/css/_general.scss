@@ -1,0 +1,227 @@
+body {
+  background: $main-bgc;
+  font-family: 'Roboto';
+  font-style: normal;
+  line-height: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color-cool-gray;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  user-select: none;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus-visible {
+    outline: none;
+    opacity: 0.7;
+  }
+  &:active {
+    outline: none;
+    opacity: 0.7;
+  }
+}
+
+.button-primary {
+  width: 180px;
+  padding: 10px 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(253.21deg, #3bcdfb 38.41%, #d728f4 78.33%), #c4c4c4;
+  mix-blend-mode: normal;
+}
+
+.container {
+  padding: 0 78px;
+}
+
+.loader {
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+// Header
+.header {
+  background-color: $header-dark;
+
+  &-container {
+    padding-top: 210px;
+    padding-bottom: 28px;
+  }
+
+  &-nav {
+    display: flex;
+    margin-bottom: 11px;
+    cursor: pointer;
+
+    :not(:last-child) {
+      margin-right: 10px;
+    }
+    &__item {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    color: $font-color-light;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+// Main
+.main {
+  &-container {
+    padding-top: 64px;
+    padding-bottom: 104px;
+  }
+
+  .news-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    margin-bottom: 20px;
+
+    &__item {
+      background: #f8f8f8;
+      .news-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 50px;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        padding-right: 33px;
+        min-height: 254px;
+
+        &__title {
+          margin: 0;
+          margin-bottom: 47px;
+          max-width: 643px;
+          color: $font-color-dark;
+          font-size: 24px;
+          font-weight: 400;
+        }
+
+        &__tag {
+          margin: 0;
+          padding: 5px;
+          border-radius: 2px;
+          border: 1px solid #97999b;
+          color: $font-color-cool-gray;
+          font-size: 12px;
+          font-weight: 700;
+        }
+
+        &__date {
+          position: absolute;
+          top: 24px;
+          left: 24px;
+          padding: 4px 5px;
+          width: 77px;
+          border-radius: 2px;
+          background: #97999b;
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 700;
+        }
+
+        &__title_first {
+          margin: 0;
+          max-width: 643px;
+          color: $font-color-light;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 128.906%; /* 41.25px */
+          text-transform: uppercase;
+        }
+
+        &__tag_first {
+          margin: 0;
+          margin-bottom: 4px;
+          padding: 4px;
+          width: 137px;
+          border-radius: 2px;
+          border: 1px solid #fff;
+          color: $font-color-light;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        &__date_first {
+          top: 32px;
+        }
+      }
+      &_first {
+        grid-column: span 2;
+        background-image: url('../img/news-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .news-card {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 100px 190px;
+  grid-gap: 13px;
+  padding: 37px 78px;
+  background: #f8f8f8;
+  &-nav {
+    display: flex;
+    li:not(:last-child) {
+      margin-right: 41px;
+    }
+    &-item {
+      color: $font-color-cool-gray;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  &-social {
+    display: flex;
+    cursor: pointer;
+    li:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+
+  &-info {
+    margin: 0;
+    color: $font-color-cool-gray;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
