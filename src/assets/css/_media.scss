@@ -21,14 +21,11 @@
       padding-bottom: 84px;
     }
     .news-list {
+      grid-template-columns: repeat(2, 1fr);
       &__item {
         .news-card {
           &__title {
             font-size: 18px;
-          }
-
-          &__title_first {
-            font-size: 24px;
           }
         }
       }
@@ -47,15 +44,6 @@
       padding-top: 60px;
       padding-bottom: 28px;
     }
-    &-nav {
-      margin-bottom: 11px;
-      :not(:last-child) {
-        margin-right: 10px;
-      }
-      &__item {
-        font-size: 12px;
-      }
-    }
     &__title {
       font-size: 18px;
     }
@@ -67,6 +55,7 @@
       padding-bottom: 84px;
     }
     .news-list {
+      gap: 32px 24px;
       &__item {
         .news-card {
           &__title {
@@ -83,25 +72,6 @@
   }
   //   Footer
   .footer {
-    grid-template-columns: 1fr 80px 110px;
-    grid-gap: 10px;
-    padding: 15px;
-    &-nav {
-      display: flex;
-      li:not(:last-child) {
-        margin-right: 15px;
-      }
-      &-item {
-        font-size: 12px;
-      }
-    }
-    &-social {
-      display: flex;
-      li:not(:last-child) {
-        margin-right: 17px;
-      }
-    }
-
     &-info {
       font-size: 12px;
     }
@@ -114,23 +84,16 @@
     padding: 0 15px;
   }
   .button-primary {
-    width: 100%;
     padding: 10px 15px;
   }
   // Header
   .header {
-    &-container {
-      padding-top: 121px;
-      padding-bottom: 29px;
-      padding-right: 101px;
-    }
-    &-nav {
-      display: none;
-    }
-    &__title {
-      font-size: 24px;
+    &__news {
+      height: 105px;
+      padding: 48px 40px;
     }
   }
+
   // Main
   .main {
     &-container {
@@ -144,11 +107,8 @@
       grid-gap: 20px;
       margin-bottom: 46px;
       &__item {
-        position: relative;
-        background: #fff;
         .news-card {
           padding: 0;
-          padding-top: 40px;
           min-height: 119px;
           &__title {
             margin-bottom: 15px;
@@ -168,36 +128,11 @@
             font-size: 10px;
           }
         }
-        &_first {
-          display: none;
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: -20px;
-          left: 0;
-          right: 0;
-          height: 1px;
-          background: #d9d9d6;
-        }
       }
     }
   }
   //   Footer
   .footer {
-    grid-template-columns: 1fr 121px;
-    grid-gap: 10px;
-    padding: 15px;
-    align-items: center;
-    &-nav {
-      display: none;
-    }
-    &-social {
-      li:not(:last-child) {
-        margin-right: 17px;
-      }
-    }
-
     &-info {
       font-size: 11px;
     }

@@ -11,22 +11,26 @@
       </div>
       <!-- Content -->
       <ul class="news-list" v-if="itemsLoaded">
-        <li class="news-list__item news-list__item_first">
-          <article class="news-card">
-            <p class="news-card__tag_first">В центре внимания</p>
-            <h2 class="news-card__title_first">
-              Операционные результаты Зебры за 2-ой квартал 2018 года
-            </h2>
-            <span class="news-card__date news-card__date_first">27.05.2018</span>
-          </article>
-        </li>
         <li v-for="newsItem of data?.items" :key="newsItem.type.xmlId" class="news-list__item">
           <article class="news-card">
-            <!-- <img v-if="newsItem.image" :src="newsItem.image" :alt="newsItem.code" /> -->
-            <h2 class="news-card__title">
-              {{ newsItem.name }}
-            </h2>
-            <span class="news-card__date">{{ formatDate(newsItem.date) }}</span>
+            <img
+              v-if="newsItem.image"
+              class="news-card__image"
+              :src="newsItem.image"
+              :alt="newsItem.code"
+            />
+            <div class="news-card-content">
+              <div class="news-card-date">
+                <div class="news-card-date__day">{{ formatDate(newsItem.date)[0] }}</div>
+                <div class="news-card-date__date">
+                  {{ formatDate(newsItem.date)[1] }}<br />{{ formatDate(newsItem.date)[2] }}
+                </div>
+              </div>
+              <h2 class="news-card__title link">
+                {{ newsItem.name }}
+              </h2>
+              <p class="news-card__descr">{{ newsItem.previewText }}</p>
+            </div>
             <p class="news-card__tag">{{ newsItem.type.value }}</p>
           </article>
         </li>
@@ -35,9 +39,11 @@
       <div class="loader" v-if="moreLoading">
         <img src="@/assets/img/loader.gif" alt="" />
       </div>
-      <button @click="showMore" v-if="showMoreBtn" class="button button-primary">
-        Загрузить ещё
-      </button>
+      <div class="btn-wrapper">
+        <button @click="showMore" v-if="showMoreBtn" class="button button-primary">
+          Загрузить ещё
+        </button>
+      </div>
     </div>
   </main>
 </template>
