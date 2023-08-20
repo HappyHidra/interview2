@@ -1,13 +1,14 @@
 # interview2
 
-To run -<br>
- clone the project<br>,
- npm install<br>
- npm run dev - development<br>
- npm run build - production
+Запустить локально -<br>
+ 1) Склонировать проект<br>,
+ 2) npm install<br>
+ 3) npm run dev - для разработки<br>
+ 4) npm run build - для продакшн
 
-Look project live on gh-pages:
+Посмотреть на gh-pages:
 happyhidra.github.io/interview2/
 
 Adaptive layout (second task):
-Click on "alpha" logo at the header of site
+Нажать на логотип "alpha" в хедере сайта
+
