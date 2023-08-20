@@ -1,6 +1,7 @@
 {
   "name": "interview2",
   "version": "0.0.0",
+  "homepage": "https://https://happyhidra.github.io/interview2/",
   "private": true,
   "scripts": {
     "dev": "vite",
