@@ -1,5 +1,4 @@
 <template>
-  <TheHeader />
   <main class="main">
     <div class="main-container container">
       <!-- Loader -->
@@ -47,12 +46,9 @@
       </div>
     </div>
   </main>
-  <TheFooter />
 </template>
 
 <script setup lang="ts">
-import TheHeader from '@/components/TheHeader.vue'
-import TheFooter from '@/components/TheFooter.vue'
 import { fetchData, fetchPage } from '@/composables/useData'
 import type { Response } from '@/types/News'
 import type { Ref } from 'vue'
@@ -114,7 +110,3 @@ const loadData = async (page?: number) => {
 
 loadData()
 </script>
-
-<style lang="scss" scoped>
-@import '@/assets/css/style.scss';
-</style>

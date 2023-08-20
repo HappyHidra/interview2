@@ -173,7 +173,7 @@ a {
       }
       &_first {
         grid-column: span 2;
-        background-image: url('@/assets/img/news-bg.png');
+        background-image: url('../img/news-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
         .news-card {
