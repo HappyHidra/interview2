@@ -10,4 +10,4 @@ Look project live on gh-pages:
 happyhidra.github.io/interview2/
 
 Adaptive layout (second task):
-happyhidra.github.io/interview2/layout
+Click on "alpha" logo at the header of site
