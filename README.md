@@ -1,14 +1,21 @@
 # interview2
+Vue3 + Typescript (Composition API)
+## Посмотреть на GitHub Pages:
+https://happyhidra.github.io/interview2/
 
-Запустить локально -<br>
- 1) Склонировать проект<br>
- 2) npm install<br>
- 3) npm run dev - для разработки<br>
- 4) npm run build - для продакшн
-
-Посмотреть на gh-pages:
-happyhidra.github.io/interview2/
-
-Чтобы посмотреть второй вариант адаптивной pixel-perfect вёрстки (не интерактивный) необходимо:
+## Посмотреть второй вариант адаптивной pixel-perfect вёрстки по макету из figma (не интерактивный) необходимо:
 Нажать на логотип "alpha" в хедере сайта
+
+## Setup
+npm install
+
+## Development Server
+npm run dev
+
+## Build the application for production:
+npm run build
+
+## Locally preview production build:
+npm run preview
+
 
