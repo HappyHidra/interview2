@@ -153,4 +153,7 @@
 
 <style lang="scss" scoped>
 @import './layout/css/style.scss';
+* {
+  font-family: 'Roboto';
+}
 </style>

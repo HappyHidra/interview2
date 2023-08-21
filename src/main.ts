@@ -3,6 +3,7 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import MainPage from '@/pages/MainPage.vue'
 import AdaptivePage from '@/pages/AdaptivePage.vue'
+import '@/assets/css/global.scss'
 
 const router = createRouter({
   history: createWebHistory(),

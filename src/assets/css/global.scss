@@ -1,0 +1,26 @@
+@import 'normalize.scss';
+@import 'reset.scss';
+@import '_fonts.scss';
+@import '_variables.scss';
+
+body {
+  background: $main-bgc;
+  font-family: 'Nunito-sans';
+  font-style: normal;
+  line-height: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color-cool-gray;
+}
